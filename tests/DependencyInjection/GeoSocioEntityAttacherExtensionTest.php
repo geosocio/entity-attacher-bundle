@@ -2,7 +2,7 @@
 
 namespace GeoSocio\Tests\EntityAttacherBundle\DependencyInjection;
 
-use GeoSocio\EntityAttacherBundle\DependencyInjection\EntityAttacherExtension;
+use GeoSocio\EntityAttacherBundle\DependencyInjection\GeoSocioEntityAttacherExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use PHPUnit\Framework\TestCase;
@@ -22,7 +22,7 @@ class GeoSocioEntityAttacherExtensionTest extends TestCase
             ->method('register')
             ->willReturn($definition);
 
-        $extension = new EntityAttacherExtension();
+        $extension = new GeoSocioEntityAttacherExtension();
         $extension->load([], $container);
     }
 }
