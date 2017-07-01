@@ -10,6 +10,11 @@
           "GeoSocio\\EntityAttacherBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+          "GeoSocio\\Tests\\EntityAttacherBundle\\": "tests/"
+        }
+    },
     "require": {
         "geosocio/entity-attacher": "^1.0.4",
         "symfony/http-kernel": "^3.0",

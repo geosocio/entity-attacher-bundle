@@ -5,14 +5,13 @@ namespace GeoSocio\EntityAttacherBundle\DependencyInjection;
 use GeoSocio\EntityAttacher\EntityAttacher;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
 /**
  * This is the class that loads and manages your bundle configuration.
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class GeoSocioEntityAttacherExtension extends Extension
+class EntityAttacherExtension extends Extension
 {
     /**
      * {@inheritdoc}
