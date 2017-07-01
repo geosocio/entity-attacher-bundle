@@ -23,8 +23,7 @@ class GeoSocioEntityAttacherExtension extends Extension
             ->setArguments([
                 '@doctrine.orm.default_entity_manager',
                 '@annotations.reader',
-            ])
-            ->setPublic(false);
+            ]);
 
         $container->setAlias('entity_attacher', 'entity_attacher.default_attacher');
     }
