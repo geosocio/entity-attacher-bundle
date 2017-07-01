@@ -1,7 +1,7 @@
 {
     "name": "geosocio/entity-attacher-bundle",
     "description": "Symfony Bundle for Attaching Entities",
-    "type": "library",
+    "type": "symfony-bundle",
     "license": "LGPA-3",
     "minimum-stability": "dev",
     "prefer-stable": true,
