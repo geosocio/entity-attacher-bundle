@@ -40,3 +40,9 @@ class AppKernel extends Kernel
     // ...
 }
 ```
+
+## Usage
+
+```php
+$container->get('entity_attacher')->attach($object);
+```
