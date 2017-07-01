@@ -9,9 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class GeoSocioEntityAttacherExtensionTest extends TestCase
 {
-    /**
-     * {@inheritdoc}
-     */
     public function testLoad()
     {
         $definition = $this->getMockBuilder(Definition::class)
