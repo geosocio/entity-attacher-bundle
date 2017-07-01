@@ -10,7 +10,7 @@
             <argument type="service" id="@annotations.reader" />
         </service>
 
-        <alias id="entity_attacher" service="entity_attacher.default_attacher" />
+        <service id="entity_attacher" alias="entity_attacher.default_attacher" />
     </services>
 
 </container>
