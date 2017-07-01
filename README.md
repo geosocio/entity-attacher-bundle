@@ -1,4 +1,4 @@
-# Entity Attacher Bundle [![Build Status](https://travis-ci.org/geosocio/entity-attacher-bundle.svg?branch=develop)](https://travis-ci.org/geosocio/entity-attacher) [![Coverage Status](https://coveralls.io/repos/github/geosocio/entity-attacher-bundle/badge.svg)](https://coveralls.io/github/geosocio/entity-attacher)
+# Entity Attacher Bundle [![Build Status](https://travis-ci.org/geosocio/entity-attacher-bundle.svg?branch=develop)](https://travis-ci.org/geosocio/entity-attacher-bundle) [![Coverage Status](https://coveralls.io/repos/github/geosocio/entity-attacher-bundle/badge.svg)](https://coveralls.io/github/geosocio/entity-attacher-bundle)
 A Syfmony Bundle for the [Entity Attacher](https://github.com/geosocio/entity-attacher) library.
 
 ## Installation
