@@ -3,6 +3,7 @@
 namespace GeoSocio\EntityAttacherBundle\DependencyInjection;
 
 use GeoSocio\EntityAttacher\EntityAttacher;
+use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
@@ -20,8 +21,8 @@ class GeoSocioEntityAttacherExtension extends Extension
     {
         $container->register('entity_attacher.default_attacher', EntityAttacher::class)
             ->setArguments([
-                '@doctrine.orm.default_entity_manager',
-                '@annotations.reader',
+                new Reference('doctrine.orm.default_entity_manager'),
+                new Reference('annotations.reader'),
             ]);
 
         $container->setAlias('entity_attacher', 'entity_attacher.default_attacher');
