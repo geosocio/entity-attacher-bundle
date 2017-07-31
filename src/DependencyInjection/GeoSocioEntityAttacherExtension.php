@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * This is the class that loads and manages your bundle configuration.
  *
- * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
+ * @see http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
 class GeoSocioEntityAttacherExtension extends Extension
 {
@@ -19,12 +19,12 @@ class GeoSocioEntityAttacherExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        $container->register('entity_attacher.default_attacher', EntityAttacher::class)
+        $container->register('geosocio_entity_attacher.default_attacher', EntityAttacher::class)
             ->setArguments([
                 new Reference('doctrine.orm.default_entity_manager'),
                 new Reference('annotations.reader'),
             ]);
 
-        $container->setAlias('entity_attacher', 'entity_attacher.default_attacher');
+        $container->setAlias('geosocio_entity_attacher', 'geosocio_entity_attacher.default_attacher');
     }
 }
